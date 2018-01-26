@@ -1,7 +1,7 @@
 <project>
   <groupId>com.ibm</groupId>
   <artifactId>Spark-Decision-Tree</artifactId>
-  <modelVersion>1.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
   <name>Spark Decision Tree</name>
   <packaging>jar</packaging>
   <version>1.0</version>
