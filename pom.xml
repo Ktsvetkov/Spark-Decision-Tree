@@ -1,0 +1,15 @@
+<project>
+  <groupId>com.ibm</groupId>
+  <artifactId>Spark-Decision-Tree</artifactId>
+  <modelVersion>1.0.0</modelVersion>
+  <name>Spark Decision Tree</name>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_2.11</artifactId>
+      <version>2.2.1</version>
+    </dependency>
+  </dependencies>
+</project>
