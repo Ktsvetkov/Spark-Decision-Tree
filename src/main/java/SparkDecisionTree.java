@@ -18,7 +18,7 @@ public class SparkDecisionTree {
 		JavaSparkContext jsc = new JavaSparkContext(sparkConf);
 
 		// Load and parse the data file.
-		String datapath = "iris.scale";
+		String datapath = "sample_libsvm_data.txt";
 		JavaRDD<LabeledPoint> data = MLUtils.loadLibSVMFile(jsc.sc(), datapath).toJavaRDD();
 		// Split the data into training and test sets (30% held out for testing)
 		JavaRDD<LabeledPoint>[] splits = data.randomSplit(new double[]{0.7, 0.3});
@@ -27,7 +27,7 @@ public class SparkDecisionTree {
 
 		// Set parameters.
 		//  Empty categoricalFeaturesInfo indicates all features are continuous.
-		int numClasses = 3;
+		int numClasses = 2;
 		Map<Integer, Integer> categoricalFeaturesInfo = new HashMap<>();
 		String impurity = "gini";
 		int maxDepth = 5;
