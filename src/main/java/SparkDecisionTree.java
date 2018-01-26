@@ -27,7 +27,7 @@ public class SparkDecisionTree {
 
 		// Set parameters.
 		//  Empty categoricalFeaturesInfo indicates all features are continuous.
-		int numClasses = 2;
+		int numClasses = 3;
 		Map<Integer, Integer> categoricalFeaturesInfo = new HashMap<>();
 		String impurity = "gini";
 		int maxDepth = 5;
